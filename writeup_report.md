@@ -98,11 +98,19 @@ that the vehicle drove the whole track without any error. I was also able to inc
 to 15 mph without leaving the track. Although, for this speed, it could be observed,
 that the car drives straight parts of the track in form of a sine function, wiggling left to right and back.
 
+To obtain the optimal training result I relied on
+the Keras callback architecture and used
+the ModelCheckpoint callback to save the model
+every time the validation loss decreased below the
+best loss observed. Using this I trained
+for 20 epochs and ended up using the result from epoch 14.
+
 #### 2. Analysis of the data and the augmented data
 
 Analyzing the steering angle distribution of the sample training data
 gives the following picture:
 ![Steering angle distribution of the sample training data][hist1]
+
 We find, that the data has a lot of samples with a steering angle of zero.
 
 After augmenting the data by using the left and right images together with
