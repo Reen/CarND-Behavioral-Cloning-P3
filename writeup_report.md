@@ -17,6 +17,9 @@ The goals / steps of this project are the following:
 [hist1]: ./histogram_input_steering_angles.png "Default steering angles."
 [hist2]: ./histogram_left_right_steering_angles.png "Left and right augmented steering angles."
 [hist3]: ./histogram_final_steering_angles.png "Final steering angles with flipped input."
+[example]: ./examples/center.jpg "Exemplary image from center camera."
+[example_left]: ./examples/left.jpg "Exemplary image from left camera."
+[example_right]: ./examples/right.jpg "Exemplary image from right camera."
 
 ## Rubric Points
 ### Here I will consider the [rubric points](https://review.udacity.com/#!/rubrics/432/view) individually and describe how I addressed each point in my implementation.  
@@ -70,6 +73,11 @@ The model used an adam optimizer, so the learning rate was not tuned manually.
 Training data was chosen to keep the vehicle driving on the road. I used images from all three cameras.
 For the left and right camera images, an artifical steering angle bias of +/-0.2 has been employed
 to steer the vehicle back to the track.
+
+Here are some examples from the sample data:
+![Center Camera][example]
+![Left Camera][example_left]
+![Right Camera][example_right]
 
 For details about how I created the training data, see the next section. 
 
