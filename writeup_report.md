@@ -75,8 +75,11 @@ For the left and right camera images, an artifical steering angle bias of +/-0.2
 to steer the vehicle back to the track.
 
 Here are some examples from the sample data:
+
 ![Center Camera][example]
+
 ![Left Camera][example_left]
+
 ![Right Camera][example_right]
 
 For details about how I created the training data, see the next section. 
